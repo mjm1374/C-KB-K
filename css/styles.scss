@@ -1,0 +1,8 @@
+//@import 'reset';
+@import 'vars';
+ 
+body{
+    background: $white;
+    color: $text;
+    font-family: $font-stack;
+}

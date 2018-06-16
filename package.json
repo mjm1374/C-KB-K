@@ -1,0 +1,16 @@
+{
+	"name": "C-BK-K",
+	"version": "1.0.0",
+	"dependencies": {
+		"browserify": "^16.2.2",
+		"grunt": "^1.0.3",
+		"jquery": "^3.3.1",
+		"jsrender": "^0.9.90",
+		"lodash": "^4.17.10",
+		"sass-google-fonts": "^1.0.1",
+		"uglify": "^0.1.5"
+	},
+	"devDependencies": {
+		"browserify-shim": "^3.8.14"
+	}
+}
