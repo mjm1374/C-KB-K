@@ -1,3 +1,9 @@
+<?php
+    include_once(db.php);
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
