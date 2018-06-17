@@ -1,5 +1,5 @@
-<?php
-
+<?
+namespace ckbk;
 
 class Recipe
 {
