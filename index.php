@@ -3,6 +3,17 @@
     include_once 'classes.php';
     include "vendor/autoload.php";
     
+    use ckbk\Recipe as Recipe;
+    
+    $thisRecipe = new Recipe;
+    $thisRecipe->set_name("Chicken soup");
+    
+    //echo $thisRecipe.name;
+    echo $thisRecipe->get_name();
+    $thisRecipe->display_name();
+    
+    
+    
 
 ?>
 
@@ -36,6 +47,12 @@
         <h1>Hello world</h1>
 
         <p>My first paragraph.</p>
+        
+        <?php
+        $thisRecipe->set_recipe("summary", "Its good for you");
+        
+        echo $thisRecipe->get_recipe("summary");
+        ?>
         
     </div>
 

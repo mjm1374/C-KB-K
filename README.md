@@ -63,7 +63,7 @@ Add additional notes about how to deploy this on a live system
 
 * [php-units-of-measure](https://github.com/PhpUnitsOfMeasure/php-units-of-measure) - Framework for unit conversion
 * [Composer](https://getcomposer.org) - Dependency Management
-* [Sass](http://sass-lang.com/) - CSS preporocessor
+* [Sass](http://sass-lang.com/) - CSS preprocessor
 
 ## Contributing
 
