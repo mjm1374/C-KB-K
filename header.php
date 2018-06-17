@@ -1,1 +1,1 @@
-Header
+<h1><?php echo $sitename ?></h1>

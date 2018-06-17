@@ -1,4 +1,12 @@
 #container {
   display: flex;
   padding: 10px;
-  color: #ff0000; }
+  color: #000; }
+  #container h1 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 5px;
+    clear: both;
+    font-weight: 600; }
+  #container p {
+    clear: both; }

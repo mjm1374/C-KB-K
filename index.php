@@ -1,26 +1,17 @@
 <?php
     include_once 'db.php';
+    include_once 'globals.php';
     include_once 'classes.php';
     include "vendor/autoload.php";
     
     use ckbk\Recipe as Recipe;
-    
-    $thisRecipe = new Recipe;
-    $thisRecipe->set_name("Chicken soup");
-    
-    //echo $thisRecipe.name;
-    echo $thisRecipe->get_name();
-    $thisRecipe->display_name();
-    
-    
-    
-
 ?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
+    <title><?php echo $sitename ?></title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -30,7 +21,7 @@
     <meta name="theme-color" content="#ffffff">
     
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css?v=<?php echo rand(); ?>" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </head>
@@ -44,16 +35,24 @@
     </header>
     
     <div id="container" class="cb-main-container">
-        <h1>Hello world</h1>
+       
 
-        <p>My first paragraph.</p>
         
+        <div>
         <?php
-        $thisRecipe->set_recipe("summary", "Its good for you");
-        
-        echo $thisRecipe->get_recipe("summary");
+            $thisRecipe = new Recipe;
+            $thisRecipe->set_name("Chicken soup");
+            
+            ?>
+             <h1><?php $thisRecipe->display_name(); ?></h1>
+             <?php
+             
+            
+            $thisRecipe->set_recipe("summary", "Its good for you");
+            
+           echo "<p>" . $thisRecipe->get_recipe("summary") . "</p>";
         ?>
-        
+        </div>
     </div>
 
 

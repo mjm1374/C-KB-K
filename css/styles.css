@@ -55,16 +55,24 @@ nav {
     nav ul li a:hover {
       background-color: #ffc61a; }
 
-#container {
-  display: flex;
-  padding: 10px;
-  color: #ff0000; }
-
 footer {
   width: 100%;
   padding: 10px;
   background-color: #4b4c4a;
   color: #000000; }
+
+#container {
+  display: flex;
+  padding: 10px;
+  color: #000; }
+  #container h1 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 5px;
+    clear: both;
+    font-weight: 600; }
+  #container p {
+    clear: both; }
 
 body {
   background: #ffffff;
