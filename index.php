@@ -1,5 +1,7 @@
 <?php
-    include_once(db.php);
+    include_once 'db.php';
+    include_once 'classes.php';
+    
 
 ?>
 
@@ -21,11 +23,27 @@
 
 </head>
 <body>
+    
+    <header>
+        <?php include_once  "header.php"; ?>
+        <nav>
+            <?php include_once  "nav.php"; ?>
+        </nav>
+    </header>
+    
+    <div id="container" class="cb-main-container">
+        <h1>Hello world</h1>
 
-<h1>Hello world</h1>
+        <p>My first paragraph.</p>
+        
+    </div>
 
-<p>My first paragraph.</p>
 
+
+
+<footer>
+    <?php include_once  "footer.php"; ?>
+</footer>
 </body>
     <script src="./js/bundle.js" type="text/javascript"></script>
     <script>

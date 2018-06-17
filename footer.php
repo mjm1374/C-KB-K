@@ -1,0 +1,1 @@
+Copyright Mike McAllister &copy;<?php echo date("Y");  ?>

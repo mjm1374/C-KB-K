@@ -1,6 +1,11 @@
-//@import 'reset';
+@import 'reset';
 @import 'vars';
- 
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'footer';
+
+
 body{
     background: $white;
     color: $text;
