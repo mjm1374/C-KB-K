@@ -4,7 +4,7 @@ function getRecipes(){
     recipes = [];
     $.getJSON("controllers/recipes.php", function(result){
         $.each(result, function(){
-            recipes.push(new Recipe(this.recipeid,this.recipename, this.recipedesc, this.recipeserving,this.recipecooktime, this.recipepreptime ));
+            recipes.push(new Recipe(this.recipeid,this.recipename, this.recipedesc, this.recipeserving,this.recipecooktime, this.recipepreptime, this.recipephoto ));
             log(this.recipename);
         });
         
@@ -12,6 +12,7 @@ function getRecipes(){
          
         var html = tmpl.render(recipes);      // Render template using data - as HTML string
         $("#container").html(html);
+         
     });
     log(recipes);
     return (recipes);
@@ -19,15 +20,20 @@ function getRecipes(){
 
 
 
-function Recipe( id, name,desc,serves,cTime, pTime) {
+function Recipe( id, name,desc,serves,cTime, pTime, photo) {
         this.id = id;
         this.name = name;
         this.desc = desc;
         this.serves = serves;
         this.cTime = cTime;
         this.pTime = pTime;
+        this.photo = photo;
         
     }
+    
+    $("#container").on("click",".ckb-recipeCard-sm", function(){
+        alert("Recipe Number: " + $(this).attr("data-recipe"));
+      });
 
 //debuging code
 function log(msg){
