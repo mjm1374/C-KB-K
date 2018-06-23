@@ -36,7 +36,7 @@ class Recipe
     // property declaration
     public $name = '';
     public $summary = "";
-    public $ingredient = '';
+    public $ingredients = '';
     public $author= ''; 
     public $yield = '';
     public $instructions = '';
@@ -88,6 +88,42 @@ class Recipe
 			 echo $this->name;
 		}
         
+}
+
+class Ingredient
+{
+    // property declaration
+    public $name = '';
+    public $amt = "";
+    public $unit = '';
+    public $desc= ''; 
+    
+    function __construct($name = "unnamed",
+                         $new_summary = "",
+                         $new_author = "",
+                         $new_yield = "",
+                         $new_desc = "" 
+                         ){
+            $this->name = $new_summary;
+            $this->amt = $new_author;
+            $this->unit = $new_yield;
+            $this->desc = $new_instructions;
+            $this->duration = $new_duration; 
+            
+           
+        }
+        
+        public function get_ingrd($this_key) { 
+			return $this->$this_key;  
+ 		}
+        
+         public function set_ingrd($this_key, $new_value) { 
+			$this->$this_key = $new_value;  
+ 		}
+            
+         public function display_ingrd() {
+			 echo $this->name;
+		}
 }
 
 ?>

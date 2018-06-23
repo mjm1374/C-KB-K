@@ -35,11 +35,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+#container {
+  display: flex;
+  padding: 10px;
+  color: #000; }
+  #container h1 {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 5px;
+    clear: both;
+    font-weight: 600; }
+  #container p {
+    clear: both; }
+
 header {
   width: 100%;
   padding: 10px;
   background-color: #75d138;
   color: #ffffff; }
+  header h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 5px;
+    clear: both;
+    font-weight: 600; }
 
 nav {
   width: 100%;
@@ -60,19 +79,6 @@ footer {
   padding: 10px;
   background-color: #4b4c4a;
   color: #000000; }
-
-#container {
-  display: flex;
-  padding: 10px;
-  color: #000; }
-  #container h1 {
-    font-size: 2em;
-    color: #000;
-    margin-bottom: 5px;
-    clear: both;
-    font-weight: 600; }
-  #container p {
-    clear: both; }
 
 body {
   background: #ffffff;
