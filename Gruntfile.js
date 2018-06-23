@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     sass: { // Begin Sass Plugin
       dist: {
         options: {
-          sourcemap : 'auto'
+          sourceMap : true
         },
         files: [{
           expand: true,
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     ]
       },
       dist: {
-        src: 'css/style.css'
+        src: 'css/styles.css'
       }
     },
     cssmin: { // Begin CSS Minify Plugin
