@@ -5,7 +5,9 @@
 #container{
     
     display: flex;
-    space-between: 5%;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: stretch;
     padding: 10px;
     color:#000;
 
@@ -26,12 +28,16 @@
 
 .ckb-recipeCard-sm{
     order: 1;
-    flex-grow : 1;
+    flex-grow:  0;
+    flex-shrink: 0;
+    flex-basis: 23%;
     overflow: hidden;
     padding: .5em;
     border:1px solid $grey;
+    height:200px;
     
-    display: block;
-    
+    p{
+        margin-bottom: .75em;
+    }
     
 }

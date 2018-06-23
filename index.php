@@ -28,25 +28,40 @@
        
 
         
-        <div class="ckb-recipeCard-sm">
-        <?php
-            $thisRecipe = new Recipe;
-            $thisRecipe->set_name("Chicken soup");
-            
-        ?>
-             <h1><?php $thisRecipe->display_name(); ?></h1>
-             <?php
-             
-            
-            $thisRecipe->set_recipe("summary", "Its good for you");
-            
-           echo "<p>" . $thisRecipe->get_recipe("summary") . "</p>";
-        ?>
-        </div>
+        <!--<div class="ckb-recipeCard-sm">
+        //<?php
+        //    $thisRecipe = new Recipe;
+        //    $thisRecipe->set_name("Chicken soup");
+        //    
+        //?>
+        //     <h1><?php //$thisRecipe->display_name(); ?></h1>
+        //     <?php
+        //     
+        //    
+        //    $thisRecipe->set_recipe("summary", "Its good for you");
+        //    
+        //   echo "<p>" . $thisRecipe->get_recipe("summary") . "</p>";
+        //?>
+        </div>-->
     </div>
 
 
-
+  <!-- Declare a JsRender template, in a script block: -->
+  <script id="myRecipes" type="text/x-jsrender">
+ 
+    <div class="ckb-recipeCard-sm">
+        <h1>{{:name}}</h1>
+        <p>
+            {{:desc}}
+        </p>
+        <p>
+            Serves: {{:serves}} </br>
+            Prep Times: {{:pTime}} </br>
+            Cook Time: {{:cTime}} </br>
+        </p>
+    </div>
+  
+  </script>
 
 <footer>
     <?php include_once  "footer.php"; ?>
@@ -56,6 +71,10 @@
     <script>
     $( document ).ready(function() {
         log( "ready!" );
-    });
+        
+         getRecipes() ;          // function to fetch JSON and populate
+        
+         
+        });
     </script>
 </html>
