@@ -26,23 +26,14 @@
     
     <div id="container" class="cb-main-container">
        
-
-        
-        <!--<div class="ckb-recipeCard-sm">
-        //<?php
-        //    $thisRecipe = new Recipe;
-        //    $thisRecipe->set_name("Chicken soup");
-        //    
-        //?>
-        //     <h1><?php //$thisRecipe->display_name(); ?></h1>
-        //     <?php
-        //     
-        //    
-        //    $thisRecipe->set_recipe("summary", "Its good for you");
-        //    
-        //   echo "<p>" . $thisRecipe->get_recipe("summary") . "</p>";
-        //?>
-        </div>-->
+        <div id="throbber" class="ckb-thobber">
+            <svg id="circle" height="60" width="60" 
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+             <image x="0" y="0" height="60" width="60"  xlink:href="img/Disk-1s-200px.svg" />
+           </svg>
+                       
+        </div>
+    
     </div>
 
 
@@ -75,7 +66,7 @@
     $( document ).ready(function() {
         log( "ready!" );
         
-         getRecipes() ;          // function to fetch JSON and populate
+        setTimeout(function(){ getRecipes(); } , 500);          // function to fetch JSON and populate
         
          
         });
