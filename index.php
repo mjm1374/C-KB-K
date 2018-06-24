@@ -66,8 +66,9 @@
     <script>
     $( document ).ready(function() {
         log( "ready!" );
-        
-        setTimeout(function(){ getRecipes(); } , 500);          // function to fetch JSON and populate
+        chkCookies();
+     
+        getRecipes();          // function to fetch JSON and populate
         
          
         });

@@ -1,11 +1,24 @@
 //Vars
 var throbber = $('#ckb-throbber');
 var container = $('#container');
-
+var username = $(".cbk-username");
 //debuging code
 function log(msg){
   console.log(msg);
 }
+
+
+// Temp login/logout listeners
+$("#ckb-signin a").click(function(e){
+     e.preventDefault();
+     login();
+  });
+
+$("#ckb-signout a").click(function(e){
+     e.preventDefault();
+     log('out');
+     logout();
+  });
 
 
 //{"recipeid":"1","recipename":"Chicken Soup","recipedesc":"it's good for you","recipedate":null,"recipeauthorid":null,"recipephoto":null,"recipecooktime":"30","recipepreptime":"30","recipeserving":"4"}
@@ -57,5 +70,4 @@ function showDisplay(html){
   container.html(html);
  
   }
-  
   
