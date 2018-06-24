@@ -1,11 +1,17 @@
 // _vars.scss
 
-$maincolor: #75d138;
+$maincolor: rgba(117, 209, 56, 1);
 $maincolor50: rgba(117, 209, 56, .5);
-$white: #ffffff;
-$black: #000000;
-$text: #4b4c4a;
-$yellow: #ffc61a;
-$grey : rgb(173, 178, 171);
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$white50: rgba(255, 255, 255, .5);
+$black50: rgba(0, 0, 0, .5);
+$text: rgba(75, 76, 74,1);
+$yellow: rgba(255, 198, 26,1);
+$grey : rgba(173, 178, 171,1);
+$red: rgba(206, 2, 2,1);
+$yellow50: rgba(255, 198, 26,.5);
+$grey50 : rgba(173, 178, 171,.5);
+$red50: rgba(206, 2, 2,.5);
 
 $font-stack: 'Tajawal', sans-serif;

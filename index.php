@@ -19,20 +19,21 @@
     
     <header>
         <?php include_once  "header.php"; ?>
-        <nav>
+        <nav id="topNav">
             <?php include_once  "nav.php"; ?>
         </nav>
     </header>
+    <!--loading throbber-->
+    <div id="ckb-throbber" class="ckb-thobber">
+        <svg id="circle" height="60" width="60" 
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+         <image x="0" y="0" height="60" width="60"  xlink:href="img/Disk-1s-200px.svg" />
+       </svg>            
+    </div>
     
-    <div id="container" class="cb-main-container">
+    <div id="container" class="ckb-main-container">
        
-        <div id="throbber" class="ckb-thobber">
-            <svg id="circle" height="60" width="60" 
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-             <image x="0" y="0" height="60" width="60"  xlink:href="img/Disk-1s-200px.svg" />
-           </svg>
-                       
-        </div>
+        
     
     </div>
 
@@ -55,7 +56,7 @@
         </p>
     </div>
   
-  </script>
+</script>
 
 <footer>
     <?php include_once  "footer.php"; ?>
