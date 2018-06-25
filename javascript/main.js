@@ -2,6 +2,7 @@
 var throbber = $('#ckb-throbber');
 var container = $('#container');
 var username = $(".cbk-username");
+
 //debuging code
 function log(msg){
   console.log(msg);

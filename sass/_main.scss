@@ -1,6 +1,9 @@
 // _main.scss
 
-
+#holder{
+  display:block;
+  min-height: 100px;
+}
 
 #container{
     
@@ -10,11 +13,11 @@
     align-items: stretch;
     padding: 10px;
     color:#000;
-    
-  -webkit-flex-flow: row wrap;
-  margin:0;
-  padding: 0;
-  padding-bottom: 50px;
+    margin-top:200px;
+    -webkit-flex-flow: row wrap;
+    margin:0;
+    padding: 0;
+    padding-bottom: 50px;
 
     
     h1{

@@ -31,11 +31,14 @@ function navToggle() {
 	menu[i].style.marginTop="100px";
 	};
     	document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+        //$("nav ul").hide();
+        
 	
 	} 
 	//to open
 	else if (nav.style.height <= "50px") {
 	nav.style.height = "275px";
+   // $("nav ul").show();
 	//main.style.marginTop = "275px";
     	var i = 0;
     	for (i = 0; i < menu.length; i++){

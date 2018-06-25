@@ -11,8 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
+* [Composer](https://getcomposer.org) - Dependency Management
+* [Node.js](https://nodejs.org/en/) - Package Manager
 ```
 Give examples
 ```
@@ -64,6 +64,8 @@ Add additional notes about how to deploy this on a live system
 * [php-units-of-measure](https://github.com/PhpUnitsOfMeasure/php-units-of-measure) - Framework for unit conversion
 * [Composer](https://getcomposer.org) - Dependency Management
 * [Sass](http://sass-lang.com/) - CSS preprocessor
+* [jsCookies](https://github.com/js-cookie/js-cookie) -  JS Cookie tools
+* [JSRender](https://www.jsviews.com/) - Javascript template rendering system
 
 ## Contributing
 
