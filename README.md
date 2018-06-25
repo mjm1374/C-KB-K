@@ -66,6 +66,7 @@ Add additional notes about how to deploy this on a live system
 * [Sass](http://sass-lang.com/) - CSS preprocessor
 * [jsCookies](https://github.com/js-cookie/js-cookie) -  JS Cookie tools
 * [JSRender](https://www.jsviews.com/) - Javascript template rendering system
+* [thephpleague/oauth2-client](https://github.com/thephpleague/oauth2-client) - League OAuth client
 
 ## Contributing
 
