@@ -10,7 +10,7 @@ var close = document.getElementById("closebtn");
 //default to measure if/else from
 nav.style.height = "50px";
 //main.style.marginTop = "50px";
-for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
+for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";}
 
 close.addEventListener("click", function(){
   var menuIcon = close.children;
@@ -23,7 +23,7 @@ function navToggle() {
 	//to close
 	if (nav.style.height <= "275px") {
 	nav.style.height = "50px";
-	//main.style.marginTop = "50px";
+	//main.style.marginTop = "50px";s
 	
     	var i = 0;
     	for (i = 0; i < menu.length; i++){
@@ -31,14 +31,15 @@ function navToggle() {
 	menu[i].style.marginTop="100px";
 	};
     	document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
-        //$("nav ul").hide();
+      
         
 	
 	} 
 	//to open
 	else if (nav.style.height <= "50px") {
 	nav.style.height = "275px";
-   // $("nav ul").show();
+
+ $("nav ul").show();
 	//main.style.marginTop = "275px";
     	var i = 0;
     	for (i = 0; i < menu.length; i++){

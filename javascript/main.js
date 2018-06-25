@@ -24,7 +24,7 @@ $("#ckb-signout a").click(function(e){
 
 //{"recipeid":"1","recipename":"Chicken Soup","recipedesc":"it's good for you","recipedate":null,"recipeauthorid":null,"recipephoto":null,"recipecooktime":"30","recipepreptime":"30","recipeserving":"4"}
 function getRecipes(){
-  clearDisplay();
+  setDisplay('clear');
     recipes = [];
     $.getJSON("controllers/recipes.php", function(result){
         $.each(result, function(){
@@ -35,7 +35,7 @@ function getRecipes(){
         var tmpl = $.templates("#myRecipes");
         var html = tmpl.render(recipes);      // Render template using data - as HTML string
 
-        showDisplay(html);
+        setDisplay('show',html);
          
     });
     log(recipes);
@@ -60,15 +60,26 @@ function Recipe( id, name,desc,serves,cTime, pTime, photo) {
       });
 
       
- // these next 2 functions will clear data and show the loadind screen and the ooposite     
-function clearDisplay(){
-  throbber.show();
-  container.html("");
-  }
+ // this function manges the screen display, loading screen, data and error msgs, ERROR MSG should be passed through the html var    
+
   
-function showDisplay(html){
-  throbber.hide();
-  container.html(html);
- 
-  }
   
+  function setDisplay(d, html){
+    switch(d) {
+    case 'show':
+        throbber.hide();
+        container.html(html);
+        break;
+    case 'clear':
+        throbber.hide();
+        container.html(html);
+        break;
+      case 'error':
+        throbber.hide();
+        container.html(html);
+        break;
+    default:
+        throbber.hide();
+        container.html(html);
+}
+  }
