@@ -1,6 +1,7 @@
 {
     "require": {
         "php-units-of-measure/php-units-of-measure": "^2.1",
-        "league/oauth2-client": "^2.3"
+        "league/oauth2-client": "^2.3".
+        "league/oauth2-facebook": "^2.0"
     }
 }

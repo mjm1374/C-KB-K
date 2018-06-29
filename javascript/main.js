@@ -9,6 +9,11 @@ function log(msg){
 }
 
 
+function setContent(page){
+  console.log(page); 
+}
+
+
 // Temp login/logout listeners
 $("#ckb-signin a").click(function(e){
      e.preventDefault();
@@ -20,6 +25,11 @@ $("#ckb-signout a").click(function(e){
      log('out');
      logout();
   });
+
+  $("#container").on("click",".ckb-recipeCard-sm", function(){
+      getRecipe( $(this).attr("data-recipe"));
+    });
+
 
 
 //{"recipeid":"1","recipename":"Chicken Soup","recipedesc":"it's good for you","recipedate":null,"recipeauthorid":null,"recipephoto":null,"recipecooktime":"30","recipepreptime":"30","recipeserving":"4"}
@@ -43,21 +53,24 @@ function getRecipes(){
 }
 
 
-
-function Recipe( id, name,desc,serves,cTime, pTime, photo) {
-        this.id = id;
-        this.name = name;
-        this.desc = desc;
-        this.serves = serves;
-        this.cTime = cTime;
-        this.pTime = pTime;
-        this.photo = photo;
+function getRecipe(recID){
+  setDisplay('clear');
+    recipes = [];
+    $.getJSON("controllers/recipe.php", {rcpid : recID}, function(result){
+        $.each(result, function(){
+            recipes.push(new Recipe(this.recipeid,this.recipename, this.recipedesc, this.recipeserving,this.recipecooktime, this.recipepreptime, this.recipephoto ));
+            //log(this.recipename);
+        });
         
-    }
-    
-    $("#container").on("click",".ckb-recipeCard-sm", function(){
-        alert("Recipe Number: " + $(this).attr("data-recipe"));
-      });
+        var tmpl = $.templates("#myRecipe");
+        var html = tmpl.render(recipes);      // Render template using data - as HTML string
+
+        setDisplay('show',html);
+         
+    });
+    log(recipes);
+    return (recipes);
+}
 
       
  // this function manges the screen display, loading screen, data and error msgs, ERROR MSG should be passed through the html var    
