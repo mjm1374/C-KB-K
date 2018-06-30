@@ -1,12 +1,14 @@
-var home = function () { getContent(); };
+var home = function () { getContent(1) };
+var content = function (slug) { getContent(slug); };
 var cook = function () { console.log("cook"); };
-var contact = function () { console.log("co0ntack"); };
+var contact = function () { console.log("contack"); };
 var recipes = function () { getRecipes(); };
 var recipe = function (rcpId) { getRecipe(rcpId);};
 
 
 var routes = {
   '/' : home,
+  '/pages/:slug' : content,
   '/cook': cook,
   '/contact': contact,
   '/recipes': [recipes, function() {

@@ -30,12 +30,30 @@ $("#ckb-signout a").click(function(e){
        window.location.hash = '/recipe/view/' + $(this).attr("data-recipe");
     });
 
-function getContent(){
+function getContent(cid){
+  setDisplay('clear');
+  log("in content: " + cid);
+  data = "cid=" + cid;
+  pages = [];
+    $.getJSON("controllers/content.php?cid=" + cid, function(result){
+        $.each(result, function(){
+            pages.push(new Content(this.ct_id,this.ct_title, this.ct_body, this.ct_author, this.ct_date, this.ct_version ));
+            //log(this.recipename);
+        });
+        
+        var tmpl = $.templates("#homePage"); // TODO need to dynamacize the template
+        var html = tmpl.render(pages);      // Render template using data - as HTML string
+
+        setDisplay('show',html);
+         
+    });
+    log(pages);
+    return (pages);
   
-  var tmpl = $.templates("#homePage");
-  var html = tmpl.render("");
-  setDisplay('show',html);
-  console.log("")
+///*  var tmpl = $.templates("#homePage");
+//  var html = tmpl.render("");
+//  setDisplay('show',*/html);
+//  console.log("")
   
 }
 

@@ -9,6 +9,7 @@
   </span>
 <ul class="menulist">
   <li><a class="menuitems" href="#" >Home</a></li>
+  <li><a class="menuitems" href="#/recipe/view/1" >cat</a></li>
   <li><a class="menuitems" href="#" >Sign In</a></li>		
   <li><a class="menuitems" href="#/recipes" >Recipes</a></li>				
   <li><a class="menuitems" href="#/contact" >Contact Us</a></li>

@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* [Composer](https://getcomposer.org) - Dependency Management
+* [Composer](https://getcomposer.org) - Dependency Manager
 * [Node.js](https://nodejs.org/en/) - Package Manager
 ```
 Give examples
@@ -67,6 +67,7 @@ Add additional notes about how to deploy this on a live system
 * [jsCookies](https://github.com/js-cookie/js-cookie) -  JS Cookie tools
 * [JSRender](https://www.jsviews.com/) - Javascript template rendering system
 * [thephpleague/oauth2-client](https://github.com/thephpleague/oauth2-client) - League OAuth client
+* [Director](https://github.com/flatiron/director) -  Flatiron Director JS Routing
 
 ## Contributing
 
@@ -74,7 +75,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [Git](http://semver.org/) for versioning. 
 
 ## Authors
 

@@ -9,6 +9,6 @@
     
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link href="css/styles.css?v=<?php echo rand(); ?>" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://www.jsviews.com/download/jsrender.min.js"></script>
-    <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
+    <script src="jscript/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="jscript/jsrender.min.js"></script>
+    <script src="jscript/director.min.js"></script>
