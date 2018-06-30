@@ -27,10 +27,17 @@ $("#ckb-signout a").click(function(e){
   });
 
   $("#container").on("click",".ckb-recipeCard-sm", function(){
-      getRecipe( $(this).attr("data-recipe"));
+       window.location.hash = '/recipe/view/' + $(this).attr("data-recipe");
     });
 
-
+function getContent(){
+  
+  var tmpl = $.templates("#homePage");
+  var html = tmpl.render("");
+  setDisplay('show',html);
+  console.log("")
+  
+}
 
 //{"recipeid":"1","recipename":"Chicken Soup","recipedesc":"it's good for you","recipedate":null,"recipeauthorid":null,"recipephoto":null,"recipecooktime":"30","recipepreptime":"30","recipeserving":"4"}
 function getRecipes(){

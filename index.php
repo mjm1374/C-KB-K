@@ -51,7 +51,7 @@
         log( "ready!" );
         chkCookies();
      
-        getRecipes();          // function to fetch JSON and populate
+        //getRecipes();          // function to fetch JSON and populate
         
          
         });

@@ -8,12 +8,10 @@
       <span class="line3"></span>
   </span>
 <ul class="menulist">
-  <li><a class="menuitems" href="" data-navigo>Home</a></li>
-  <li><a class="menuitems" href="#" data-navigo>Sign In</a></li>		
-  <li><a class="menuitems" href="recipes" data-navigo>Recipes</a></li>				
-  <li><a class="menuitems" href="contact" data-navigo>Contact Us</a></li>
-  <li><a href="#/author">#/author</a></li>
-  <li><a href="#/books">#/books</a></li>
-  <li><a href="#/books/view/1">#/books/view/1</a></li>
+  <li><a class="menuitems" href="#" >Home</a></li>
+  <li><a class="menuitems" href="#" >Sign In</a></li>		
+  <li><a class="menuitems" href="#/recipes" >Recipes</a></li>				
+  <li><a class="menuitems" href="#/contact" >Contact Us</a></li>
+ 
 
 </ul>	

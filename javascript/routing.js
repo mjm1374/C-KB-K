@@ -1,17 +1,20 @@
-var author = function () { console.log("author"); };
-var books = function () { console.log("books"); };
-var viewBook = function (bookId) {
-  console.log("viewBook: bookId is populated: " + bookId);
-};
+var home = function () { getContent(); };
+var cook = function () { console.log("cook"); };
+var contact = function () { console.log("co0ntack"); };
+var recipes = function () { getRecipes(); };
+var recipe = function (rcpId) { getRecipe(rcpId);};
+
 
 var routes = {
-  '/author': author,
-  '/books': [books, function() {
+  '/' : home,
+  '/cook': cook,
+  '/contact': contact,
+  '/recipes': [recipes, function() {
     console.log("An inline route handler.");
   }],
-  '/books/view/:bookId': viewBook
+  '/recipe/view/:rcpid': recipe
 };
 
 var router = Router(routes);
 
-router.init();
+router.init(['/']);
