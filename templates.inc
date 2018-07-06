@@ -8,7 +8,7 @@
         
         </h1>
         {{:body}}
-        <a href="/recipes">Go to all recipes</a>
+        <a href="./recipes">Go to all recipes</a>
     </div>
   
 </script>
@@ -28,7 +28,7 @@
         Prep Times: {{:pTime}} </br>
         Cook Time: {{:cTime}} </br>
     </p>
-     <a href="/recipes">go back</a>
+     <a href="./recipes">go back</a>
 </div>
 
 </script>

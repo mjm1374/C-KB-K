@@ -1,5 +1,5 @@
 <title><?php echo $sitename ?></title>
-    <base href="http://localhost:8888" target="_blank">
+    <base href="http://localhost:8888">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
