@@ -1,15 +1,6 @@
 <?php
 
-if (in_array('mod_rewrite', apache_get_modules())) {
-    echo "Yes, Apache supports mod_rewrite.";
-}
-
-else {
-    echo "Apache is not loading mod_rewrite.";
-}
-
-$recipe =  $_GET['rcp'];
-echo  $_SERVER['SERVER_NAME'];
+ 
 
     include_once  'db.php';
     include_once 'globals.php';
@@ -64,7 +55,7 @@ echo  $_SERVER['SERVER_NAME'];
         log( "ready!" );
         chkCookies();
      
-        getRecipe(<?php echo $recipe; ?>);          // function to fetch JSON and populate
+        getRecipes();          // function to fetch JSON and populate
         
          
         });

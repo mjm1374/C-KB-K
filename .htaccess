@@ -2,5 +2,6 @@
   RewriteEngine On
   RewriteBase /
   RewriteRule ^recipe/([^/]+)/?$ recipe.php?rcp=$1 [L]
-  
+  RewriteRule ^recipes$ recipes.php [L]
+  RewriteRule ^page/([^/]+)/?$ content.php?cnt=$1 [L]
 </IfModule> 

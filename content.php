@@ -1,17 +1,8 @@
 <?php
+$slug =  $_GET['cnt'];
 
-if (in_array('mod_rewrite', apache_get_modules())) {
-    echo "Yes, Apache supports mod_rewrite.";
-}
 
-else {
-    echo "Apache is not loading mod_rewrite.";
-}
-
-$recipe =  $_GET['rcp'];
-echo  $_SERVER['SERVER_NAME'];
-
-    include_once  'db.php';
+    include_once 'db.php';
     include_once 'globals.php';
     include_once 'classes.php';
     include "vendor/autoload.php";
@@ -31,7 +22,6 @@ echo  $_SERVER['SERVER_NAME'];
 <body>
     
     <header>
-        
         <?php include_once  "header.php"; ?>
         <nav id="topNav">
             <?php include_once  "nav.php"; ?>
@@ -46,6 +36,7 @@ echo  $_SERVER['SERVER_NAME'];
          </svg>            
       </div>
     </div>
+
     <div id="container" class="ckb-main-container">
        
         
@@ -55,16 +46,26 @@ echo  $_SERVER['SERVER_NAME'];
 
  
 <footer>
-    <?php include_once  "footer.php"; ?>
+    <?php
+    if (in_array('mod_rewrite', apache_get_modules())) {
+    echo "Yes, Apache supports mod_rewrite.";
+}
+
+else {
+    echo "Apache is not loading mod_rewrite.";
+}
+
+    
+    include_once  "footer.php"; ?>
 </footer>
 </body>
-    <script src="../js/script.min.js" type="text/javascript"></script>
+    <script src="./js/script.min.js" type="text/javascript"></script>
     <script>
     $( document ).ready(function() {
         log( "ready!" );
         chkCookies();
      
-        getRecipe(<?php echo $recipe; ?>);          // function to fetch JSON and populate
+        getContent('<?php echo $slug; ?>');          // function to fetch JSON and populate
         
          
         });

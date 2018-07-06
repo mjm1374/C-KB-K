@@ -27,7 +27,8 @@ $("#ckb-signout a").click(function(e){
   });
 
   $("#container").on("click",".ckb-recipeCard-sm", function(){
-       window.location.hash = '/recipe/view/' + $(this).attr("data-recipe");
+       window.location = '/recipe/' + $(this).attr("data-recipe");
+      
     });
 
 function getContent(slug){

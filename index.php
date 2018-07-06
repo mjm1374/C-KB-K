@@ -42,7 +42,7 @@
 
  
 <footer>
-    <?php include_once  "footer.php"; ?>
+   <?php include_once  "footer.php"; ?>
 </footer>
 </body>
     <script src="./js/script.min.js" type="text/javascript"></script>
@@ -51,7 +51,7 @@
         log( "ready!" );
         chkCookies();
      
-        //getRecipes();          // function to fetch JSON and populate
+        getContent('home');          // function to fetch JSON and populate
         
          
         });
