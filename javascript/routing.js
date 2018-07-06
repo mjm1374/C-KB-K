@@ -1,4 +1,4 @@
-var home = function () { getContent(1) };
+var home = function () { getContent('home') };
 var content = function (slug) { getContent(slug); };
 var cook = function () { console.log("cook"); };
 var contact = function () { console.log("contack"); };

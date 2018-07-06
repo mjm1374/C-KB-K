@@ -30,12 +30,12 @@ $("#ckb-signout a").click(function(e){
        window.location.hash = '/recipe/view/' + $(this).attr("data-recipe");
     });
 
-function getContent(cid){
+function getContent(slug){
   setDisplay('clear');
-  log("in content: " + cid);
-  data = "cid=" + cid;
+  log("in content: " + slug);
+  data = "slug=" + slug;
   pages = [];
-    $.getJSON("controllers/content.php?cid=" + cid, function(result){
+    $.getJSON("controllers/content.php?slug=" + slug, function(result){
         $.each(result, function(){
             pages.push(new Content(this.ct_id,this.ct_title, this.ct_body, this.ct_author, this.ct_date, this.ct_version ));
             //log(this.recipename);
