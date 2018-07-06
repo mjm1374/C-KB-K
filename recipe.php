@@ -8,4 +8,6 @@ else {
     echo "Apache is not loading mod_rewrite.";
 }
 
+echo "<br>RCP: " . $_GET['rcp'];
+
 ?>

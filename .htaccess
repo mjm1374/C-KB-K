@@ -1,4 +1,6 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-</IfModule>
+  RewriteRule ^recipe/([^/]+)/?$ recipe.php?rcp=$1 [L]
+  
+</IfModule> 
