@@ -12,7 +12,7 @@
   <li><a class="menuitems" href="#" >Sign In</a></li>		
   <li><a class="menuitems" href="/recipes" >Recipes</a></li>
   <li><a class="menuitems" href="/page/about" >About CKBK</a></li>	
-  <li><a class="menuitems" href="/contact" >Contact Us</a></li>
+  <li><a class="menuitems" href="page/contact" >Contact Us</a></li>
  
 
 </ul>	
