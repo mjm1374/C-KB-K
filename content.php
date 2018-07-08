@@ -46,20 +46,12 @@ $slug =  $_GET['cnt'];
 
  
 <footer>
-    <?php
-    if (in_array('mod_rewrite', apache_get_modules())) {
-    echo "Yes, Apache supports mod_rewrite.";
-}
 
-else {
-    echo "Apache is not loading mod_rewrite.";
-}
 
     
-    include_once  "footer.php"; ?>
+<?php include_once  "footer.php"; ?>
 </footer>
 </body>
-    <script src="./js/script.min.js" type="text/javascript"></script>
     <script>
     $( document ).ready(function() {
         log( "ready!" );

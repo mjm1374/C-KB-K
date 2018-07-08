@@ -1,11 +1,13 @@
 <?php
-    include_once 'db.php';
     include_once 'globals.php';
+    include_once 'db.php';
     include_once 'classes.php';
     include "vendor/autoload.php";
     include "templates.inc";
     
     use ckbk\Recipe as Recipe;
+    $actual_link
+
 ?>
 
 
@@ -25,11 +27,13 @@
         </nav>
     </header>
     <div id="holder"></div>
+    
+    
       <!--loading throbber-->
       <div id="ckb-throbber" class="ckb-thobber">
           <svg id="circle" height="60" width="60" 
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-           <image x="0" y="0" height="60" width="60"  xlink:href="img/Disk-1s-200px.svg" />
+           <image x="0" y="0" height="60" width="60"  xlink:href=img/Disk-1s-200px.svg" />
          </svg>            
       </div>
     </div>
@@ -45,7 +49,7 @@
    <?php include_once  "footer.php"; ?>
 </footer>
 </body>
-    <script src="./js/script.min.js" type="text/javascript"></script>
+    
     <script>
     $( document ).ready(function() {
         log( "ready!" );

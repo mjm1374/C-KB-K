@@ -49,7 +49,7 @@
     <?php include_once  "footer.php"; ?>
 </footer>
 </body>
-    <script src="../js/script.min.js" type="text/javascript"></script>
+    
     <script>
     $( document ).ready(function() {
         log( "ready!" );
