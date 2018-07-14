@@ -58,51 +58,8 @@
         
     }
 
-
-.ckb-recipeCard-sm{
-    order: 1;
-    flex-grow:  0;
-    flex-shrink: 0;
-    flex-basis: 23%;
-    overflow: hidden;
-    padding: .5em;
-    border:1px solid $grey;
-    height:auto;
-    cursor: pointer;
-    margin-bottom: 5px;
-    
-    
-    .ckb-recipeImg-sm{
-        width:96%;
-        margin: 0 auto;
-        background-size: cover !important;
-        height: 150px;
-        padding:5px;
-        position: relative;
-        margin-bottom: 10px;
-        background-position: -50% !important;
-        
-        
-         h2{
-            font-size: 1.75em;
-            color: $white;
-            font-weight: 600;
-            vertical-align: bottom;
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
-            text-shadow:2px 2px 5px $black;
-         }
-    }
-    
-    
-    p{
-        margin-bottom: .75em;
-    }
-    
-}
-
-
-.ckb-recipeCard-sm:hover{
-    box-shadow: 0px 0px 5px 2px $maincolor50;
+.cbk-adholder{
+  width:300px;
+  height:auto;
+  margin: 0 auto;
 }
