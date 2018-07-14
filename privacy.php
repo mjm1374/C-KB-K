@@ -6,7 +6,6 @@
     include "templates.inc";
     
     use ckbk\Recipe as Recipe;
-    $actual_link
 
 ?>
 
@@ -39,7 +38,7 @@
     </div>
     <div id="container" class="ckb-main-container">
        
-        
+       <?php include_once "https://app.termly.io/document/privacy-policy/ffa71da9-1023-462f-8102-6b5465a751e2" ?> 
     
     </div>
 
@@ -55,7 +54,7 @@
         log( "ready!" );
         chkCookies();
      
-        getContent('home');          // function to fetch JSON and populate
+        //getContent('home');          // function to fetch JSON and populate
         
          FB.getLoginStatus(function(response) {
             statusChangeCallback(response);

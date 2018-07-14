@@ -39,7 +39,7 @@ function getContent(slug){
     $.getJSON("controllers/content.php?slug=" + slug, function(result){
         $.each(result, function(){
             pages.push(new Content(this.ct_id,this.ct_title, this.ct_body, this.ct_author, this.ct_date, this.ct_version ));
-            //log(this.recipename);
+            //log(this.RecipeName);
         });
         
         var tmpl = $.templates("#homePage"); // TODO need to dynamacize the template
@@ -58,14 +58,14 @@ function getContent(slug){
   
 }
 
-//{"recipeid":"1","recipename":"Chicken Soup","recipedesc":"it's good for you","recipedate":null,"recipeauthorid":null,"recipephoto":null,"recipecooktime":"30","recipepreptime":"30","recipeserving":"4"}
+//{"RecipeID":"1","RecipeName":"Chicken Soup","RecipeDesc":"it's good for you","Date":null,"CookID":null,"RecipePhoto":null,"CookTime":"30","PrepTime":"30","Serving":"4"}
 function getRecipes(){
   setDisplay('clear');
     recipes = [];
     $.getJSON("controllers/recipes.php", function(result){
         $.each(result, function(){
-            recipes.push(new Recipe(this.recipeid,this.recipename, this.recipedesc, this.recipeserving,this.recipecooktime, this.recipepreptime, this.recipephoto ));
-            //log(this.recipename);
+            recipes.push(new Recipe(this.RecipeID,this.RecipeName, this.RecipeDesc, this.Serving,this.CookTime, this.PrepTime, this.RecipePhoto ));
+            log(this.RecipeName);
         });
         
         var tmpl = $.templates("#myRecipes");
@@ -84,8 +84,8 @@ function getRecipe(recID){
     recipes = [];
     $.getJSON("controllers/recipe.php", {rcpid : recID}, function(result){
         $.each(result, function(){
-            recipes.push(new Recipe(this.recipeid,this.recipename, this.recipedesc, this.recipeserving,this.recipecooktime, this.recipepreptime, this.recipephoto ));
-            //log(this.recipename);
+            recipes.push(new Recipe(this.RecipeID,this.RecipeName, this.RecipeDesc, this.Serving,this.CookTime, this.PrepTime, this.RecipePhoto ));
+            //log(this.RecipeName);
         });
         
         var tmpl = $.templates("#myRecipe");
