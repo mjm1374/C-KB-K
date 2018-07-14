@@ -73,7 +73,10 @@
       <div class="cbk-rcp-right">
         
         <div class="cbk-cook-profile">
-          <h3>Mr. Cookington</h3>
+          <div class="cbk-cheif-clear">
+            <div class="cbk-cheif-photo-sm" style="background: url('img-assets/the_boys.jpg');"></div>
+            <h3>Mr. Cookington</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ex molestiae iusto adipisci! Aspernatur perferendis labore dolorem, nesciunt ex, illo iure rem voluptatum omnis. Fuga mollitia deserunt earum error odio voluptatum nostrum officia numquam
           quaerat dicta eaque veniam rem illum, quisquam, corporis quo culpa, commodi tempore aspernatur perferendis aliquam optio. Officiis inventore velit dignissimos debitis nulla illo quaerat ducimus recusandae quis architecto voluptas placeat vel sunt itaque,
           laboriosam impedit expedita fuga facere sint non minima.</p>

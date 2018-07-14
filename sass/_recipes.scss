@@ -155,6 +155,25 @@
         margin: 0 auto;
          
     }
+    .cbk-cook-profile{
+        
+        .cbk-cheif-clear{vertical-align: middle;}
+        
+        .cbk-cheif-photo-sm{
+            width: 100px;
+            background-size: cover !important;
+            height: 100px; 
+            position: relative;
+            float:left;
+            background-position: -50% !important;
+            border-radius: 50%;
+            margin: 0px 10px 10px 0px;
+        }
+        
+        h3{
+            
+        }
+    }
     
     .cbk-diary-sm{
         margin-top:75px; 
