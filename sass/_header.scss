@@ -14,19 +14,23 @@ header{
     margin-bottom: .5em;
     display: block;
     height:70px;
-    overflow: hidden;
-    
+
+    .cbk-title-holder{
+        height:102px;
+        overflow: hidden;
+         margin-top: -85px !important;
         h1{  
         font-size: 13em;
         color: $white;
         margin-bottom: 5px;
         font-weight: 600;
-        margin-top: -95px !important;
+    
         margin-left: 94px;
         letter-spacing: -30px;
         text-shadow: 3px 2px $black;
         
         }
+    }
         
         #logo{
             display: inline-block;
