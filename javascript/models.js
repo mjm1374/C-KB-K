@@ -8,6 +8,15 @@ function Recipe( id, name,desc,serves,cTime, pTime, photo) {
         this.photo = photo;
         
     }
+//{"RecipeID":"1","ItemID":"10","Quantity":"1","Type":"Ingredient","Name":"Kosher salt\n\n","Amount":"1 Tbsp"}]    
+function Ingredient( id, name, amount, type, quantity, rcpid) {
+        this.id = id;
+        this.name = name;
+        this.amount = amount;
+        this.type = type;
+        this.quantity = quantity;
+        this.rcpid =  rcpid;
+    }
 
 function Content(id, title,body,author,date,ver){
     this.id = id;

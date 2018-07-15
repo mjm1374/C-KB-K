@@ -80,22 +80,37 @@ function getRecipes(){
 
 
 function getRecipe(recID){
-  setDisplay('clear');
+  //setDisplay('clear');
     recipes = [];
+    ingredients = [];
+    
     $.getJSON("controllers/recipe.php", {rcpid : recID}, function(result){
         $.each(result, function(){
             recipes.push(new Recipe(this.RecipeID,this.RecipeName, this.RecipeDesc, this.Serving,this.CookTime, this.PrepTime, this.RecipePhoto ));
             //log(this.RecipeName);
         });
         
+        //description
         var tmpl = $.templates("#myRecipe");
         var html = tmpl.render(recipes);      // Render template using data - as HTML string
+        $('#cbk-rcp-desc').html(html);
+        
+      });
+        
+    $.getJSON("controllers/ingredients.php", {rcpid : recID}, function(result){
+        $.each(result, function(){
+            ingredients.push(new Ingredient(this.ItemID,this.Name, this.Amount, this.Type, this.Quantity,this.RecipeID ));
+            //log(this.RecipeName);
+        });
 
-        setDisplay('show',html);
+        //ingregients
+        var tmpl2 = $.templates("#ingredientList");
+        var html2 = tmpl2.render(ingredients);      // Render template using data - as HTML string
+        $('#cbk-rcp-ingrds').html(html2);
          
     });
-    log(recipes);
-    return (recipes);
+    //log(recipes);
+    return (ingredients);
 }
 
       

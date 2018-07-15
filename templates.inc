@@ -15,14 +15,6 @@
 
 <script id="myRecipe" type="text/x-jsrender">
 
-<div class="ckb-recipeCard-lg" data-recipe="{{:id}}">
-  
-
-    <div class="ckb-rcp-content">
-      
-      <div class="cbk-rcp-top"></div>
-      
-      <div class="cbk-rcp-left">
         {{if photo }}
           <div class="ckb-recipeImg-lg" style="background: url('img-assets/{{:photo}}')">
             <h2>{{:name}}</h2>
@@ -61,68 +53,18 @@
               Cook Time: {{:cTime}} </br>
           </p>
           
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maiores cupiditate aliquam facilis. Totam deserunt, fugit veniam repellendus, quidem explicabo numquam perspiciatis laudantium distinctio, itaque non cumque excepturi quae et reiciendis
-          alias nemo provident cupiditate molestiae accusamus consectetur rerum ducimus voluptatum voluptas. Quae natus ipsam praesentium ipsa? Autem tenetur nostrum, dicta necessitatibus dolorum, quos. Aspernatur dolore officia repellendus perspiciatis nisi laudantium
-          beatae dicta libero asperiores blanditiis consectetur in vero nihil, commodi est sequi tempore porro accusamus voluptas recusandae vel sint cumque. Commodi eligendi maxime reiciendis dolor assumenda, tempora rerum officia rem totam cupiditate, aperiam
-          ullam quasi, aliquam quis, placeat voluptatibus.</p>
-          
         </div>
-        
-      </div>
-      
-      <div class="cbk-rcp-right">
-        
-        <div class="cbk-cook-profile">
-          <div class="cbk-cheif-clear">
-            <div class="cbk-cheif-photo-sm" style="background: url('img-assets/the_boys.jpg');"></div>
-            <h3>Mr. Cookington</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ex molestiae iusto adipisci! Aspernatur perferendis labore dolorem, nesciunt ex, illo iure rem voluptatum omnis. Fuga mollitia deserunt earum error odio voluptatum nostrum officia numquam
-          quaerat dicta eaque veniam rem illum, quisquam, corporis quo culpa, commodi tempore aspernatur perferendis aliquam optio. Officiis inventore velit dignissimos debitis nulla illo quaerat ducimus recusandae quis architecto voluptas placeat vel sunt itaque,
-          laboriosam impedit expedita fuga facere sint non minima.</p>
-        </div>
-        
-        <div class="ckb-recipe-ad-lg">
-          <div class="cbk-adholder">
-            <img src="img/ads/ad-space-300x250.png" alt="palceholder" >
-          </div>
-        </div>
-        
-        <div class="cbk-diary-sm">
-          <h4>Diary Entries</h4>
-          <div class="cbk-rcp-entry-sm">
-            <span class="cbk-entry-date">October 4, 2017</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, corporis voluptatibus aut excepturi, molestiae laborum nihil a dolorem, provident error laudantium esse ad officiis reprehenderit. Architecto placeat omnis vitae repellendus voluptatum
-            nobis tempore earum rem eius voluptas assumenda neque voluptatem molestias, consequatur esse ipsa iure, quas! Nostrum, impedit molestiae cumque.</p>
-          </div>
-          
-          <div class="cbk-rcp-entry-sm">
-            <span class="cbk-entry-date">May  12, 2017</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, corporis voluptatibus aut excepturi, molestiae laborum nihil a dolorem, provident error laudantium esse ad officiis reprehenderit. Architecto placeat omnis vitae repellendus voluptatum
-            nobis tempore earum rem eius voluptas assumenda neque voluptatem molestias, consequatur esse ipsa iure, quas! Nostrum, impedit molestiae cumque.</p>
-          </div>
-          
-          <div class="cbk-rcp-entry-sm">
-            <span class="cbk-entry-date">April 24, 2017</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, corporis voluptatibus aut excepturi, molestiae laborum nihil a dolorem, provident error laudantium esse ad officiis reprehenderit. Architecto placeat omnis vitae repellendus voluptatum
-            nobis tempore earum rem eius voluptas assumenda neque voluptatem molestias, consequatur esse ipsa iure, quas! Nostrum, impedit molestiae cumque.</p>
-          </div>
-            
-        </div>
-        
-      </div>
-      
-      
-      
-      
-         
-    </div>
-   
-    
-    
-     <a href="./recipes">go back</a>
-</div>
 
+</script>
+
+
+
+<!-- Declare a JsRender template, in a script block: -->
+<script id="ingredientList" type="text/x-jsrender">
+ 
+ {{if type == 'Ingredient'}}
+    <li class="ingrdList">{{:amount}} {{:name}} </li>
+ {{/if}}
 </script>
 
 <!-- Declare a JsRender template, in a script block: -->
