@@ -19,13 +19,17 @@
     padding: 0;
     padding-bottom: 50px;
 
-    
-    h1{
-    font-size: 2em;
-    color: #000;
-    margin-bottom: 5px;
-    clear: both;
-    font-weight: 600;
+    .cbk-full-wrapper {
+      h1{
+      font-size: 4em;
+      color: #000;
+      margin-bottom: 5px;
+      clear: both;
+      font-weight: 600;
+      letter-spacing: -5px;
+      text-shadow: 3px 2px $grey50;
+      font-weight:700;
+      }
     }
     
     p{
@@ -59,7 +63,7 @@
     }
 
 .cbk-adholder{
-  width:300px;
+  width:0px;
   height:auto;
   margin: 0 auto;
 }

@@ -14,14 +14,17 @@ header{
     margin-bottom: .5em;
     display: block;
     height:70px;
+    overflow: hidden;
     
         h1{  
-        font-size: 3em;
+        font-size: 13em;
         color: $white;
         margin-bottom: 5px;
         font-weight: 600;
-        margin-top: -58px !important;
+        margin-top: -95px !important;
         margin-left: 94px;
+        letter-spacing: -30px;
+        text-shadow: 3px 2px $black;
         
         }
         

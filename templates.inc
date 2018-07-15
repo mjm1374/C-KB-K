@@ -25,12 +25,12 @@
       <div class="cbk-rcp-left">
         {{if photo }}
           <div class="ckb-recipeImg-lg" style="background: url('img-assets/{{:photo}}')">
-            
+            <h2>{{:name}}</h2>
         {{else}}
           <div class="ckb-recipeNoImg-lg">
-      
+            <h2>{{:name}}</h2>  
         {{/if}}
-              <h2>{{:name}}</h2>
+              
           </div>
       
         <div class="ckb-recipe-desc-lg">
